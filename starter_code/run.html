@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="https://www.google.com/jsapi"></script>
+<script src="bostonEmployeeSalaries.js"></script>
+<script src="exercise.js"></script>
+<script src="chart.js"></script>
+
+<div id="chart_div" style="width: 1800px; height: 3000px;">Hello</div>
+
+<script>
+
+var run = function run(){
+	exercise.load(boston);
+	var points = exercise.generatePoints();
+	var dataset = generateDataset(points);
+	drawChart(dataset);
+};
+run();
+
+</script>
+
+</html>
