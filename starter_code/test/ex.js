@@ -8,7 +8,7 @@ api.load = function(path) {
 	var script = new vm.Script(text);
 
 	// run script in new context
-	var sandbox = {};
+	var sandbox = {console};
 	script.runInNewContext(sandbox);
 
 	// return exercise object
